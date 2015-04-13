@@ -16,8 +16,7 @@
 					    			
     "browserLaunchLink" : "http://mm.blitzer.de",
     
-    "onPageFinishedLoadUrl" : "
-javascript:
+    "onPageFinishedLoadUrl" : "javascript:
 var myCoords = { latitude:#lat#, longitude:#lng#, altitude:0, accuracy:10, altitudeAccuracy:10, heading:0, speed:0 };
 var myPos = { coords:myCoords, timestamp: (new Date()) };
 write_cookie('zoomlevel', #zoom#);
