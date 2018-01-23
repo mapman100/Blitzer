@@ -20,6 +20,8 @@
 var myCoords = { latitude:#lat#, longitude:#lng#, altitude:0, accuracy:10, altitudeAccuracy:10, heading:0, speed:0 };
 var myPos = { coords:myCoords, timestamp: (new Date()) };
 write_cookie('zoomlevel', #zoom#);
+write_cookie('fest', 1);
+write_cookie('traffic', 1);
 handle_position_query(myPos);
 foundGPS(1);
     "
