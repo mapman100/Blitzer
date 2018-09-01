@@ -29,7 +29,6 @@
 
   <script type='text/javascript'>
   window.loadPage = function (url) {
-  alert('start replacing ...');
   $.get(url, function(page) {
 
   newPage = page.replace('lat_global = 51.163361;', 'lat_global = #lat#');
@@ -38,8 +37,6 @@
   var newDoc = document.open();
   newDoc.write(newPage);
   newDoc.close();
-
-  alert(newPage);
 
 });
 };
